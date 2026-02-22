@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유진의 자기소개</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-blue: #2563eb;
+      --light-blue: #e0f2fe;
+      --white: #fff;
+      --gray: #f3f4f6;
+      --text: #22223b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Pretendard', Arial, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, var(--main-blue) 60%, var(--light-blue) 100%);
+      color: var(--white);
+      padding: 2.5rem 1.2rem 2rem 1.2rem;
+      border-bottom-left-radius: 40px 20px;
+      border-bottom-right-radius: 40px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0; right: 0; bottom: -10px;
+      height: 40px;
+      background: var(--white);
+      border-radius: 100% 100% 0 0 / 60% 60% 0 0;
+      z-index: 1;
+    }
+    .header-content {
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 0.5rem;
+    }
+    main {
+      padding: 1.5rem 1.2rem 2.5rem 1.2rem;
+      max-width: 480px;
+      margin: -20px auto 0 auto;
+      background: var(--white);
+      border-radius: 24px;
+      box-shadow: 0 2px 16px 0 rgba(37,99,235,0.07);
+      position: relative;
+      z-index: 2;
+    }
+    section {
+      margin-bottom: 2.2rem;
+    }
+    .projects a {
+      display: flex;
+      align-items: center;
+      gap: 0.7em;
+      text-decoration: none;
+      color: var(--main-blue);
+      background: var(--gray);
+      padding: 0.7em 1em;
+      border-radius: 12px;
+      margin-bottom: 0.7em;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .projects a:hover {
+      background: var(--light-blue);
+    }
+    .projects span {
+      font-size: 1.3em;
+    }
+    .social {
+      display: flex;
+      gap: 1em;
+      margin-top: 0.5em;
+    }
+    .social a {
+      display: inline-block;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px 0 rgba(37,99,235,0.08);
+      transition: transform 0.15s;
+    }
+    .social a:hover {
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (min-width: 600px) {
+      main {
+        margin-top: -40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>유진</h1>
+      <div class="subtitle">떠오르는 아이디어를 직접 만들어보는 걸 좋아합니다.</div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2 style="font-size:1.15rem; margin-bottom:0.7em;">🔧 최근 프로젝트</h2>
+      <div class="projects">
+        <a href="https://jajang-jajang.vercel.app/" target="_blank"><span>🧚</span>jajang-jajang — 아이와 함께 직접 만드는 동화책</a>
+        <a href="https://vinyl.pomodoro.kr/" target="_blank"><span>🎵</span>vinyl.pomodoro — LP 감성의 집중 타이머</a>
+        <a href="https://yujin-68.github.io/saddle-stitch-web-service/" target="_blank"><span>📖</span>saddle-stitch-web-service — 중철 제본 웹 서비스</a>
+      </div>
+    </section>
+    <section>
+      <h2 style="font-size:1.15rem; margin-bottom:0.7em;">🌐 소셜 네트워크</h2>
+      <div class="social">
+        <a href="https://velog.io/@yujintak/posts" target="_blank">
+          <img src="https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=velog&logoColor=white" alt="Velog" height="32"/>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
