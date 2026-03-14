@@ -3,137 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>유진의 자기소개</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --main-blue: #2563eb;
-      --light-blue: #e0f2fe;
-      --white: #fff;
-      --gray: #f3f4f6;
-      --text: #22223b;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Pretendard', Arial, sans-serif;
-      background: var(--white);
-      color: var(--text);
-      min-height: 100vh;
-    }
-    header {
-      background: linear-gradient(135deg, var(--main-blue) 60%, var(--light-blue) 100%);
-      color: var(--white);
-      padding: 2.5rem 1.2rem 2rem 1.2rem;
-      border-bottom-left-radius: 40px 20px;
-      border-bottom-right-radius: 40px 20px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    header::after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0; right: 0; bottom: -10px;
-      height: 40px;
-      background: var(--white);
-      border-radius: 100% 100% 0 0 / 60% 60% 0 0;
-      z-index: 1;
-    }
-    .header-content {
-      position: relative;
-      z-index: 2;
-    }
-    h1 {
-      margin: 0 0 0.5rem 0;
-      font-size: 2.1rem;
-      font-weight: 700;
-      letter-spacing: -1px;
-    }
-    .subtitle {
-      font-size: 1.1rem;
-      opacity: 0.9;
-      margin-bottom: 0.5rem;
-    }
-    main {
-      padding: 1.5rem 1.2rem 2.5rem 1.2rem;
-      max-width: 480px;
-      margin: -20px auto 0 auto;
-      background: var(--white);
-      border-radius: 24px;
-      box-shadow: 0 2px 16px 0 rgba(37,99,235,0.07);
-      position: relative;
-      z-index: 2;
-    }
-    section {
-      margin-bottom: 2.2rem;
-    }
-    .projects a {
-      display: flex;
-      align-items: center;
-      gap: 0.7em;
-      text-decoration: none;
-      color: var(--main-blue);
-      background: var(--gray);
-      padding: 0.7em 1em;
-      border-radius: 12px;
-      margin-bottom: 0.7em;
-      font-weight: 500;
-      transition: background 0.2s;
-    }
-    .projects a:hover {
-      background: var(--light-blue);
-    }
-    .projects span {
-      font-size: 1.3em;
-    }
-    .social {
-      display: flex;
-      gap: 1em;
-      margin-top: 0.5em;
-    }
-    .social a {
-      display: inline-block;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 1px 4px 0 rgba(37,99,235,0.08);
-      transition: transform 0.15s;
-    }
-    .social a:hover {
-      transform: translateY(-2px) scale(1.04);
-    }
-    @media (min-width: 600px) {
-      main {
-        margin-top: -40px;
-      }
-    }
-  </style>
+  <title>탁유진 | 포트폴리오</title>
+
+  <!-- Google Fonts: Noto Sans KR -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>유진</h1>
-      <div class="subtitle">떠오르는 아이디어를 직접 만들어보는 걸 좋아합니다.</div>
-    </div>
-  </header>
-  <main>
-    <section>
-      <h2 style="font-size:1.15rem; margin-bottom:0.7em;">🔧 최근 프로젝트</h2>
-      <div class="projects">
-        <a href="https://jajang-jajang.vercel.app/" target="_blank"><span>🧚</span>jajang-jajang — 아이와 함께 직접 만드는 동화책</a>
-        <a href="https://vinyl.pomodoro.kr/" target="_blank"><span>🎵</span>vinyl.pomodoro — LP 감성의 집중 타이머</a>
-        <a href="https://yujin-68.github.io/saddle-stitch-web-service/" target="_blank"><span>📖</span>saddle-stitch-web-service — 중철 제본 웹 서비스</a>
-      </div>
-    </section>
-    <section>
-      <h2 style="font-size:1.15rem; margin-bottom:0.7em;">🌐 소셜 네트워크</h2>
-      <div class="social">
-        <a href="https://velog.io/@yujintak/posts" target="_blank">
-          <img src="https://img.shields.io/badge/Velog-20C997?style=flat-square&logo=velog&logoColor=white" alt="Velog" height="32"/>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-content">
+      <h1>탁유진</h1>
+      <p class="tagline">떠오르는 아이디어를 직접 만들어보는 걸 좋아합니다.</p>
+      <p class="bio">아이디어를 단순히 구현하는 것을 넘어, 프론트엔드와 클라우드, AI 모델링을 아우르는 풀스택 역량을 쌓아가고 있습니다. 서비스 기획부터 배포, 마케팅 피드백까지의 사이클을 경험하며 사용자에게 가치를 전달하는 개발자를 꿈꿉니다.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/yujin-tak-349265353/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://velog.io/@yujintak/posts" target="_blank" aria-label="Velog">
+          <i class="fa-solid fa-pen-nib"></i> Velog
         </a>
       </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack">
+      <h2><i class="fa-solid fa-layer-group"></i> Tech Stack</h2>
+      <div class="tech-list">
+        <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+        <span class="tech-badge"><i class="fa-solid fa-chart-line"></i> Google Analytics</span>
+      </div>
     </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2><i class="fa-solid fa-rocket"></i> Projects</h2>
+      <ul class="project-list">
+        <li class="project-item">
+          <div>
+            <div class="project-info">
+              <strong>Drag Tech</strong>
+              <span class="badge">In Review</span>
+            </div>
+            <p>궁금한 기술 용어를 드래그만으로 검색할 수 있는 크롬 익스텐션</p>
+          </div>
+        </li>
+        <li class="project-item">
+          <a href="https://jajang-jajang.vercel.app/" target="_blank">
+            <div class="project-info">
+              <strong>자장자장</strong>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <p>아이와 함께 직접 만드는 동화책</p>
+          </a>
+        </li>
+        <li class="project-item">
+          <a href="https://vinyl.pomodoro.kr/" target="_blank">
+            <div class="project-info">
+              <strong>Vinyl Pomodoro</strong>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <p>LP 감성의 집중 타이머</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community">
+      <h2><i class="fa-solid fa-people-group"></i> Community</h2>
+      <ul class="community-list">
+        <li>
+          <a href="https://www.instagram.com/lit_knu/" target="_blank"><strong>LIT</strong></a>
+          <span>운영진 (2026.02 ~ Present)</span>
+        </li>
+        <li>
+          <a href="https://github.com/matdaaiga-kr/" target="_blank"><strong>맞다AI가</strong></a>
+          <span>운영팀 (2025.01 ~ 2025.04, 2026.03 ~ Present)</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Blog Section -->
+
+    <!-- Awards Section -->
+    <section id="awards">
+      <h2><i class="fa-solid fa-trophy"></i> Awards</h2>
+      <ul class="award-list">
+        <li>
+          <strong>아모레퍼시픽 AI Innovation Challenge</strong>
+          <span>CRM 메시지 자동화 특별상 (2026)</span>
+        </li>
+        <li>
+          <strong>성균관대 AI 창업 아이디어 ON</strong>
+          <span>장려상 (2025)</span>
+        </li>
+      </ul>
+    </section>
+
   </main>
+
+  <footer>
+    <p>&copy; 2026 탁유진. All rights reserved.</p>
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
 </body>
 </html>
