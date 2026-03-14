@@ -16,105 +16,198 @@
 </head>
 <body>
 
-  <!-- Hero Section -->
+  <!-- ====== Navbar ====== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">YJ</a>
+      <ul class="nav-links">
+        <li><a href="#tech-stack">Tech</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#community">Activity</a></li>
+        <li><a href="https://www.linkedin.com/in/yujin-tak-349265353/" target="_blank" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ====== Hero ====== -->
   <header id="hero">
-    <div class="hero-content">
-      <h1>탁유진</h1>
-      <p class="tagline">떠오르는 아이디어를 직접 만들어보는 걸 좋아합니다.</p>
-      <p class="bio">아이디어를 단순히 구현하는 것을 넘어, 프론트엔드와 클라우드, AI 모델링을 아우르는 풀스택 역량을 쌓아가고 있습니다. 서비스 기획부터 배포, 마케팅 피드백까지의 사이클을 경험하며 사용자에게 가치를 전달하는 개발자를 꿈꿉니다.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/yujin-tak-349265353/" target="_blank" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://velog.io/@yujintak/posts" target="_blank" aria-label="Velog">
-          <i class="fa-solid fa-pen-nib"></i> Velog
-        </a>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">안녕하세요, 저는</p>
+        <h1>탁유진<span class="hero-dot">.</span></h1>
+        <p class="hero-subtitle">아이디어를 직접 만들어보는 풀스택 개발자</p>
+        <p class="hero-bio">프론트엔드와 클라우드, AI 모델링을 아우르는 역량을 쌓아가고 있습니다.<br>서비스 기획부터 배포, 마케팅 피드백까지의 사이클을 경험하며<br>사용자에게 가치를 전달하는 개발자를 꿈꿉니다.</p>
+        <div class="hero-actions">
+          <a href="https://www.linkedin.com/in/yujin-tak-349265353/" target="_blank" class="btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> 연락하기
+          </a>
+          <a href="#projects" class="btn-secondary">프로젝트 보기</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/yujin-tak-349265353/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://velog.io/@yujintak/posts" target="_blank" aria-label="Velog">
+            <i class="fa-solid fa-pen-nib"></i>
+          </a>
+        </div>
       </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card">
+          <div class="hero-card-avatar"><img src="증명사진_20260306_검정셔츠.png" alt="탁유진 프로필 사진"></div>
+          <p class="hero-card-name">탁유진</p>
+          <p class="hero-card-role">Fullstack Developer</p>
+          <div class="hero-card-chips">
+            <span>Frontend</span>
+            <span>Cloud</span>
+            <span>AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <i class="fa-solid fa-chevron-down"></i>
     </div>
   </header>
 
+  <!-- ====== Main ====== -->
   <main>
 
-    <!-- Tech Stack Section -->
+    <!-- Tech Stack -->
     <section id="tech-stack">
-      <h2><i class="fa-solid fa-layer-group"></i> Tech Stack</h2>
-      <div class="tech-list">
-        <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
-        <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
-        <span class="tech-badge"><i class="fa-solid fa-chart-line"></i> Google Analytics</span>
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">Skills</span>
+          <h2>Tech Stack</h2>
+        </div>
+        <div class="tech-list">
+          <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="tech-badge"><i class="fa-solid fa-chart-line"></i> Google Analytics</span>
+        </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects">
-      <h2><i class="fa-solid fa-rocket"></i> Projects</h2>
-      <ul class="project-list">
-        <li class="project-item">
-          <div>
-            <div class="project-info">
-              <strong>Drag Tech</strong>
-              <span class="badge">In Review</span>
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">Work</span>
+          <h2>Projects</h2>
+        </div>
+        <ul class="project-grid">
+          <li class="project-card">
+            <div class="project-card-inner">
+              <div class="project-card-top">
+                <strong>Drag Tech</strong>
+                <span class="badge">In Review</span>
+              </div>
+              <p>궁금한 기술 용어를 드래그만으로 검색할 수 있는 크롬 익스텐션</p>
             </div>
-            <p>궁금한 기술 용어를 드래그만으로 검색할 수 있는 크롬 익스텐션</p>
+          </li>
+          <li class="project-card">
+            <a href="https://jajang-jajang.vercel.app/" target="_blank">
+              <div class="project-card-top">
+                <strong>자장자장</strong>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+              <p>아이와 함께 직접 만드는 동화책</p>
+            </a>
+          </li>
+          <li class="project-card">
+            <a href="https://vinyl.pomodoro.kr/" target="_blank">
+              <div class="project-card-top">
+                <strong>Vinyl Pomodoro</strong>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+              <p>LP 감성의 집중 타이머</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">Writing</span>
+          <h2>Blog</h2>
+        </div>
+        <div id="blog-cards" class="blog-grid">
+          <p class="blog-loading"><i class="fa-solid fa-spinner fa-spin"></i> 글을 불러오는 중...</p>
+        </div>
+        <a href="https://velog.io/@yujintak/posts" target="_blank" class="section-more">
+          Velog에서 더 보기 <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Community + Awards (two columns on desktop) -->
+    <div class="two-col-sections">
+
+      <section id="community">
+        <div class="section-inner">
+          <div class="section-header">
+            <span class="section-label">Involvement</span>
+            <h2>Community</h2>
           </div>
-        </li>
-        <li class="project-item">
-          <a href="https://jajang-jajang.vercel.app/" target="_blank">
-            <div class="project-info">
-              <strong>자장자장</strong>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            <p>아이와 함께 직접 만드는 동화책</p>
-          </a>
-        </li>
-        <li class="project-item">
-          <a href="https://vinyl.pomodoro.kr/" target="_blank">
-            <div class="project-info">
-              <strong>Vinyl Pomodoro</strong>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            <p>LP 감성의 집중 타이머</p>
-          </a>
-        </li>
-      </ul>
-    </section>
+          <ul class="activity-list">
+            <li>
+              <div class="activity-title">
+                <a href="https://www.instagram.com/lit_knu/" target="_blank"><strong>LIT</strong></a>
+                <span class="activity-role">운영진</span>
+              </div>
+              <span class="activity-period">2026.02 ~ Present</span>
+            </li>
+            <li>
+              <div class="activity-title">
+                <a href="https://github.com/matdaaiga-kr/" target="_blank"><strong>맞다AI가</strong></a>
+                <span class="activity-role">운영팀</span>
+              </div>
+              <span class="activity-period">2025.01 ~ 2025.04 · 2026.03 ~ Present</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- Community Section -->
-    <section id="community">
-      <h2><i class="fa-solid fa-people-group"></i> Community</h2>
-      <ul class="community-list">
-        <li>
-          <a href="https://www.instagram.com/lit_knu/" target="_blank"><strong>LIT</strong></a>
-          <span>운영진 (2026.02 ~ Present)</span>
-        </li>
-        <li>
-          <a href="https://github.com/matdaaiga-kr/" target="_blank"><strong>맞다AI가</strong></a>
-          <span>운영팀 (2025.01 ~ 2025.04, 2026.03 ~ Present)</span>
-        </li>
-      </ul>
-    </section>
+      <section id="awards">
+        <div class="section-inner">
+          <div class="section-header">
+            <span class="section-label">Recognition</span>
+            <h2>Awards</h2>
+          </div>
+          <ul class="activity-list">
+            <li>
+              <div class="activity-title">
+                <strong>아모레퍼시픽 AI Innovation Challenge</strong>
+              </div>
+              <span class="activity-period">CRM 메시지 자동화 특별상 · 2026</span>
+            </li>
+            <li>
+              <div class="activity-title">
+                <strong>성균관대 AI 창업 아이디어 ON</strong>
+              </div>
+              <span class="activity-period">장려상 · 2025</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- Blog Section -->
-
-    <!-- Awards Section -->
-    <section id="awards">
-      <h2><i class="fa-solid fa-trophy"></i> Awards</h2>
-      <ul class="award-list">
-        <li>
-          <strong>아모레퍼시픽 AI Innovation Challenge</strong>
-          <span>CRM 메시지 자동화 특별상 (2026)</span>
-        </li>
-        <li>
-          <strong>성균관대 AI 창업 아이디어 ON</strong>
-          <span>장려상 (2025)</span>
-        </li>
-      </ul>
-    </section>
+    </div>
 
   </main>
 
+  <!-- ====== Footer ====== -->
   <footer>
-    <p>&copy; 2026 탁유진. All rights reserved.</p>
+    <div class="footer-inner">
+      <span>&copy; 2026 탁유진</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/yujin-tak-349265353/" target="_blank">LinkedIn</a>
+        <a href="https://velog.io/@yujintak/posts" target="_blank">Velog</a>
+      </div>
+    </div>
   </footer>
 
   <!-- External JS -->
